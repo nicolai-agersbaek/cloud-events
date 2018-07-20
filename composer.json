@@ -9,7 +9,7 @@
     ],
     "type": "project",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
@@ -23,7 +23,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.30",
+            "php": "7.1",
             "ext-bcmath": "2.6.3"
         }
     }
