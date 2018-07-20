@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of a Timestamp type in the CloudEvents specification.
  */
-class TimestampType extends AbstractType
+class TimestampType extends Type
 {
     
     public function __construct()

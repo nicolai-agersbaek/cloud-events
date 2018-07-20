@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of a URI type in the CloudEvents specification.
  */
-class URIType extends AbstractType
+class URIType extends Type
 {
     
     public function __construct()

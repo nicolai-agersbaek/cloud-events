@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Base class for type definitions in the CloudEvents specification.
  */
-abstract class AbstractType implements TypeInterface
+abstract class Type implements TypeInterface
 {
     
     /**

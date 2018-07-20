@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of an Object type in the CloudEvents specification.
  */
-class ObjectType extends AbstractType
+class ObjectType extends Type
 {
     
     public function __construct()

@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of a Map type in the CloudEvents specification.
  */
-class MapType extends AbstractType
+class MapType extends Type
 {
     
     public function __construct()

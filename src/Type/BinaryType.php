@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of a Binary type in the CloudEvents specification.
  */
-class BinaryType extends AbstractType
+class BinaryType extends Type
 {
     
     public function __construct()

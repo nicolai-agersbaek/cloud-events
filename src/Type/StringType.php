@@ -7,7 +7,7 @@ namespace SmartWeb\CloudEvents\Type;
 /**
  * Definition of a String type in the CloudEvents specification.
  */
-class StringType extends AbstractType
+class StringType extends Type
 {
     
     public function __construct()
