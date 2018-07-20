@@ -6,15 +6,30 @@ namespace SmartWeb\CloudEvents\Type;
 
 /**
  * Definition of a Binary type in the CloudEvents specification.
+ *
+ * @api
  */
 class BinaryType extends Type
 {
     
-    public function __construct()
+    /**
+     * @var self
+     */
+    private static $instance;
+    
+    protected function __construct()
     {
         parent::__construct(
             self::BINARY,
             'Sequence of bytes.'
         );
+    }
+    
+    /**
+     * @return self
+     */
+    public static function create() : self
+    {
+        return self::$instance = self::$instance ?? new self();
     }
 }

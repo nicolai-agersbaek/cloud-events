@@ -6,15 +6,30 @@ namespace SmartWeb\CloudEvents\Type;
 
 /**
  * Definition of a String type in the CloudEvents specification.
+ *
+ * @api
  */
-class StringType extends Type
+final class StringType extends Type
 {
     
-    public function __construct()
+    /**
+     * @var self
+     */
+    private static $instance;
+    
+    protected function __construct()
     {
         parent::__construct(
             self::STRING,
             'Sequence of printable Unicode characters.'
         );
+    }
+    
+    /**
+     * @return self
+     */
+    public static function create() : self
+    {
+        return self::$instance = self::$instance ?? new self();
     }
 }

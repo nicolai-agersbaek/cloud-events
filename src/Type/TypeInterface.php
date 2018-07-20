@@ -5,7 +5,7 @@ declare(strict_types = 1);
 namespace SmartWeb\CloudEvents\Type;
 
 /**
- * Definition of an abstract data type.
+ * Definition of an abstract data type from the CloudEvents specification.
  *
  * @api
  */

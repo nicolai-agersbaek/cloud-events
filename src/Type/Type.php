@@ -54,7 +54,7 @@ abstract class Type implements TypeInterface
      * @param string $name
      * @param string $description
      */
-    public function __construct(string $name, string $description)
+    protected function __construct(string $name, string $description)
     {
         $this->name = $name;
         $this->description = $description;
