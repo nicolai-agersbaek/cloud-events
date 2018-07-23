@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SmartWeb\\CloudEvents": "src/"
+            "SmartWeb\\CloudEvents\\": "src/"
         }
     },
     "config": {
