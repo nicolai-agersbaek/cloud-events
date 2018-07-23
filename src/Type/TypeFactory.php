@@ -65,7 +65,7 @@ final class TypeFactory
     /**
      * @return URIType
      */
-    public static function uri() : URIType
+    public static function URI() : URIType
     {
         return self::$instances[URIType::class] = self::$instances[URIType::class] ?? URIType::create();
     }
