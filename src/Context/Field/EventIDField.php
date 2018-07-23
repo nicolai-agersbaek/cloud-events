@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
 /**
@@ -20,7 +21,7 @@ final class EventIDField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::SOURCE,
+            ContextInterface::SOURCE,
             TypeFactory::string(),
             'ID of the event. The semantics of this string are explicitly undefined to ease the implementation of producers. Enables deduplication.',
             $value

@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
 /**
@@ -20,7 +21,7 @@ final class EventTypeField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::EVENT_TYPE,
+            ContextInterface::EVENT_TYPE,
             TypeFactory::string(),
             'Type of occurrence which has happened. Often this property is used for routing, observability, policy enforcement, etc.',
             $value

@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
 /**
@@ -20,7 +21,7 @@ final class EventTimeField extends Field
     public function __construct(\DateTimeInterface $value)
     {
         parent::__construct(
-            self::SOURCE,
+            ContextInterface::SOURCE,
             TypeFactory::timestamp(),
             'Timestamp of when the event happened.',
             $value

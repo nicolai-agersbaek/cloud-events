@@ -25,11 +25,6 @@ interface FieldInterface
     public function getType() : TypeInterface;
     
     /**
-     * @return string
-     */
-    public function getDescription() : string;
-    
-    /**
      * @return mixed
      */
     public function getValue();

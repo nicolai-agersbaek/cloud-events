@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
 /**
@@ -20,7 +21,7 @@ final class ContentTypeField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::SOURCE,
+            ContextInterface::SOURCE,
             TypeFactory::string(),
             'Describes the data encoding format.',
             $value

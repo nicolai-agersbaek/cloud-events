@@ -15,56 +15,6 @@ abstract class Field implements FieldInterface
 {
     
     /**
-     * Name of the 'eventType' field of a CloudEvents context.
-     */
-    protected const EVENT_TYPE = 'eventType';
-    
-    /**
-     * Name of the 'eventTypeVersion' field of a CloudEvents context.
-     */
-    protected const EVENT_TYPE_VERSION = 'eventTypeVersion';
-    
-    /**
-     * Name of the 'cloudEventsVersion' field of a CloudEvents context.
-     */
-    protected const CLOUD_EVENTS_VERSION = 'cloudEventsVersion';
-    
-    /**
-     * Name of the 'source' field of a CloudEvents context.
-     */
-    protected const SOURCE = 'source';
-    
-    /**
-     * Name of the 'eventID' field of a CloudEvents context.
-     */
-    protected const EVENT_ID = 'eventID';
-    
-    /**
-     * Name of the 'eventTime' field of a CloudEvents context.
-     */
-    protected const EVENT_TIME = 'eventTime';
-    
-    /**
-     * Name of the 'schemaURL' field of a CloudEvents context.
-     */
-    protected const SCHEMA_URL = 'schemaURL';
-    
-    /**
-     * Name of the 'contentType' field of a CloudEvents context.
-     */
-    protected const CONTENT_TYPE = 'contentType';
-    
-    /**
-     * Name of the 'extensions' field of a CloudEvents context.
-     */
-    protected const EXTENSIONS = 'extensions';
-    
-    /**
-     * Name of the 'date' field of a CloudEvents context.
-     */
-    protected const DATA = 'date';
-    
-    /**
      * @var string
      */
     private $name;

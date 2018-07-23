@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
 /**
@@ -20,7 +21,7 @@ final class EventTypeVersionField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::EVENT_TYPE_VERSION,
+            ContextInterface::EVENT_TYPE_VERSION,
             TypeFactory::string(),
             'The version of the eventType. This enables the interpretation of data by eventual consumers, requires the consumer to be knowledgeable about the producer.',
             $value

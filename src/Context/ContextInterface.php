@@ -26,6 +26,56 @@ interface ContextInterface extends \Serializable
 {
     
     /**
+     * Name of the 'eventType' field of a CloudEvents context.
+     */
+    public const EVENT_TYPE = 'eventType';
+    
+    /**
+     * Name of the 'eventTypeVersion' field of a CloudEvents context.
+     */
+    public const EVENT_TYPE_VERSION = 'eventTypeVersion';
+    
+    /**
+     * Name of the 'cloudEventsVersion' field of a CloudEvents context.
+     */
+    public const CLOUD_EVENTS_VERSION = 'cloudEventsVersion';
+    
+    /**
+     * Name of the 'source' field of a CloudEvents context.
+     */
+    public const SOURCE = 'source';
+    
+    /**
+     * Name of the 'eventID' field of a CloudEvents context.
+     */
+    public const EVENT_ID = 'eventID';
+    
+    /**
+     * Name of the 'eventTime' field of a CloudEvents context.
+     */
+    public const EVENT_TIME = 'eventTime';
+    
+    /**
+     * Name of the 'schemaURL' field of a CloudEvents context.
+     */
+    public const SCHEMA_URL = 'schemaURL';
+    
+    /**
+     * Name of the 'contentType' field of a CloudEvents context.
+     */
+    public const CONTENT_TYPE = 'contentType';
+    
+    /**
+     * Name of the 'extensions' field of a CloudEvents context.
+     */
+    public const EXTENSIONS = 'extensions';
+    
+    /**
+     * Name of the 'date' field of a CloudEvents context.
+     */
+    public const DATA = 'date';
+    
+    /**
      * @return EventTypeField
      */
     public function getEventType() : EventTypeField;

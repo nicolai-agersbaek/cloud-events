@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Literal\ObjectInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
@@ -21,7 +22,7 @@ final class DataField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::SOURCE,
+            ContextInterface::SOURCE,
             TypeFactory::object(),
             'The event payload. The payload depends on the eventType, schemaURL and eventTypeVersion, the payload is encoded into a media format which is specified by the contentType attribute (e.g. application/json).',
             $value

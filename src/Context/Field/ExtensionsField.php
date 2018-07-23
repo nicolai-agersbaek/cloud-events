@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace SmartWeb\CloudEvents\Context\Field;
 
+use SmartWeb\CloudEvents\Context\ContextInterface;
 use SmartWeb\CloudEvents\Literal\MapInterface;
 use SmartWeb\CloudEvents\Type\TypeFactory;
 
@@ -21,7 +22,7 @@ final class ExtensionsField extends Field
     public function __construct(string $value)
     {
         parent::__construct(
-            self::SOURCE,
+            ContextInterface::SOURCE,
             TypeFactory::map(),
             'This is for additional metadata and this does not have a mandated structure. This enables a place for custom fields a producer or middleware might want to include and provides a place to test metadata before adding them to the CloudEvents specification. See the Extensions document for a list of possible properties.',
             $value
